@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2? family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/logo3.png" type="image/x-icon">
+	<title id="titulo1">FreeMovies</title>
+
+<style>
+	#xddd{
+
+        background:#7f8c8d;
+      color: #fff;
+      display:inline-block;
+      font-size: 1.25em;
+      margin:20px ;
+      padding:10px 0px ;
+      text-align:center;
+      width: 200px;
+      text-decoration:none;
+
+
+
+
+
+
+
+	}
+
+  #boton {
+
+      background:#7f8c8d;
+      color: #fff;
+      display:inline-block;
+      font-size: 1.25em;
+      margin:20px ;
+      padding:10px 0px ;
+      text-align:center;
+      width: 200px;
+      text-decoration:none;
+
+
+  }
+
+   #RE {
+
+
+     font-family: 'Road Rage', cursiva;
+
+
+   }
+
+
+   #TITULO {
+
+     
+
+      font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+
+
+
+   }
+
+
+   #s{
+	list-style: none;
+	padding: 0;
+	background: #092327;
+	width: 30%;
+	height: 26px;
+	max-width: 1250px;
+	margin: auto;
+	color: white;
+}
+
+  #s li a{
+	text-decoration: none;
+	color: red;
+	padding: 20px;
+	display: block;
+}
+
+  #s li{
+	display: inline-block;
+	text-align: center;
+}
+
+ #s li a:hover{
+	background: red;
+}
+
+
+   /**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  font-size: 30px;
+  color: #4dbf00;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  margin-right: 30px;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
+}
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-text-container {
+  margin: 0 20px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.toggle-icon {
+  color: goldenrod;
+}
+
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s ease all;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.left-menu-icon {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content {
+  height: 50vh;
+  padding: 50px;
+}
+
+.featured-title {
+  width: 200px;
+}
+
+.featured-desc {
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0;
+}
+
+.featured-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.movie-list-container {
+  padding: 0 20px;
+}
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movie-list-item-title {
+  background-color: #333;
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc {
+  background-color: #333;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.navbar-container.active {
+  background-color: white;
+
+  color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
+
+
+   
+
+
+
+
+</style>
+
+</head>
+<body   style="background-color:#01184D;">
+
+
+	<header>
+		<div class="contenedor">
+			<h2 id="TITULO" style="color:black;"  class="logotipo">FreeMovies</h2>
+			<nav id="nav">
+
+				<select data-uia="language-picker-header" class="ui-select medium" id="lang-switcher-header-select" tabindex="0" placeholder="lang-switcher"><option selected="" lang="es" value="/hn/" data-language="es" data-country="HN">Español</option><option lang="en" value="/hn-en/" data-language="en" data-country="HN">English</option></select>
+       
+
+				<button id="s"><i>Inicio</i></a></button>
+				<button id="s"><a   href="pagina6.html"><i  style=" width: 100px; height: 80px;  color: white; ">Series</i></a></button> 
+			    <button id="s"><a href="Peliculasd.html"><i style="color: white; "> Peliculas</i> </a></button>
+			    <button id="s"><a   href="pagina7.html"><i style="color: white; ">TV EN VIVO</i></a></button>
+				<button id="s"><a href="pagina 4.html"> <i style="color: white; "> Mas reciente</i> </a></button>
+			  	
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h3  id="TITULO"  style="color:white;"  class="titulo">ARCANE</h3>
+				<p style="color:white;"    class="descripcion">
+					Arcane es una serie de televisión animada franco-estadounidense de aventuras, drama y comedia1​, ambientada en el universo de League of Legends.2​3​ La serie fue anunciada durante las celebraciones del décimo aniversario de League of Legends.4​ Será desarrollada y producida por Riot Games, con servicios de animación del estudio francés Fortiche Productions. Originalmente programada para un lanzamiento en 2020, la serie se reprogramó para un lanzamiento en 2021 debido a la pandemia de COVID-19.5​ La serie se estrenó finalmente a nivel mundial el 6 de noviembre de 2021 tanto en la plataforma de de vídeo de Netflix como en Tencent Video en China.6​ La serie se verá dividida en 3 "actos" de 3 episodios cada uno, lanzados durante 3 semanas consecutivas.7​8​
+				</p>1
+				<button><a href="arcane.html"><i  id="RE">Reproducir</i></a></button>
+
+
+
+				<center><button   style=  " background-color: white;  width:140px; height:40px"><a style="color:;" href="REGISTRAR.html"><i>REGISTRAR</i></a> 
+	<br></button></center>
+		
+
+	
+			</div>
+		</div>
+	</main>
+
+
+
+	
+	<script src="js/main.js"></script>
+
+	
+    
+
+
+
+
+
+    <div class="movie-list-container">
+                <h1 class="movie-list-title">Entrenenimiento</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/38.jpg" alt="">
+                            <span class="movie-list-item-title">Bill & Ted salvando el universo</span>
+                            <p class="movie-list-item-desc">Tiempo atrás, los rockeros Bill y Ted recibieron una visita del futuro que les dijo que compondrían la canción que salvaría el universo. Años después, los dos amigos siguen intentando componer algo que valga la pena.</p>
+                            <button class="movie-list-item-button"><a href=""><i style=" color: white; ">Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/39.jpg" alt="">
+                            <span class="movie-list-item-title">No miren arriba</span>
+                            <p class="movie-list-item-desc">Dos astrónomos mediocres descubren que, en pocos meses, un meteorito destruirá el planeta Tierra. A partir de ese momento, intentan advertir a la humanidad del peligro que se avecina a través de los medios de comunicación.  </p>
+                             <button class="movie-list-item-button"><a href=""><i>Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/40.png" alt="">
+                            <span class="movie-list-item-title">Misión de rescate</span>
+                            <p class="movie-list-item-desc"> Tyler Rake, un intrépido mercenario, es enviado a Bangladesh por un poderoso mafioso encarcelado para que salve a su hijo secuestrado.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/41.jpg" alt="">
+                            <span class="movie-list-item-title">El poder del perro</span>
+                            <p class="movie-list-item-desc">Los acaudalados hermanos Phil y George Burbank son las dos caras de la misma moneda. Phil es elegante y cruel, mientras que George es impasible y amable. Cuando George se casa en secreto con una viuda del pueblo, Phil lleva a cabo una guerra sádica e implacable usando a su afeminado hijo, Peter, como peón.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/42.jpg" alt="">
+                            <span class="movie-list-item-title">Todo el día y una noche</span>
+                            <p class="movie-list-item-desc"> Un joven reflexiona por primera vez sobre sí mismo, sus circunstancias, la sociedad y el sistema que lo ha llevado a la prisión, cuando ingresa en la misma cárcel en la que su padre cumple condena.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/43.jpg" alt="">
+                            <span class="movie-list-item-title">El hoyoEn el futuro, los prisioneros se alojan en celdas verticales, observando cómo los presos de las celdas superiores son alimentados mientras los de abajo mueren de hambre. Una jungla de supervivencia donde solo hay tres tipos de personas: los que están arriba, los que están abajo y los que deciden saltar, incapaces de soportar esa agonía por más tiempo.</span>
+                            <p class="movie-list-item-desc">En el futuro, los prisioneros se alojan en celdas verticales, observando cómo los presos de las celdas superiores son alimentados mientras los de abajo mueren de hambre. Una jungla de supervivencia donde solo hay tres tipos de personas: los que están arriba, los que están abajo y los que deciden saltar, incapaces de soportar esa agonía por más tiempo.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">Rápidos y Furiosos 9</span>
+                            <p class="movie-list-item-desc"></p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+
+            <img src="https://c.tenor.com/02s_b-JjOAMAAAAC/movie-spongebob.gif" alt="Pelicula GIFs | Tenor" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 433px; height: 310.894px; margin: 0px;"><br><br><br>
+
+<fooater>
+        
+        <center><h2   style="color: black;" class="titulo-final">&copy; Jorge Meraz | Alejandro Meraz  CopyRight 2021</h2></center>
+    </fooater>
+
+    
+<div class="resolucion">
+        <div class="desktop">
+            <h4>Esto es un ordenador</h1>
+        </div>
+        <div class="tablet">
+            <h4>Esto es un tablet</h1>
+        </div>
+        <div class="movil">
+            <h4>Esto es un movil</h1>
+        </div>
+    </div>  
+
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Series</title>
+	<link rel="stylesheet" href="css/estilos.css">
+     
+    <link rel="shortcut icon" href="img/logo3.png" type="image/x-icon">
+
+    <style>
+    	
+ #SERIES{
+
+
+      font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+
+       
+       
+       background-color: black;
+
+
+       width: 1400;
+       height: 90;
+
+    }
+
+
+
+ 
+
+
+figure {
+
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  
+  
+
+
+
+}
+
+figcaption {
+
+	position: relative;
+	
+}
+
+
+
+
+  body{
+  font-family: arial, helvetica;
+  background: #e8e8e8;
+}
+
+.menu{
+  list-style: none;
+  padding: 0;
+  background: #092327;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: red;
+  padding: 20px;
+  display: block;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a:hover{
+  background: #ef8354;
+}
+
+
+
+    .contenedor figure{
+       position:relative;
+        height: 450px;
+        cursor: pointer;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.50);
+    }
+    .contenedor figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .contenedor figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,103,123,0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .contenedor figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .contenedor figure:hover > .capa h3{
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    .contenedor figure:hover > img{
+        transform: scale(1.3);
+    }
+    .contenedor figure .capa h3{
+        color: #fff;
+        font-weight: 100;
+        margin-bottom: 100px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .contenedor figure .capa p{
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    }
+
+
+body { 
+                background-image: url("bridgerton-1.jpg" ); 
+                background-position: center 25%; 
+                width: 40000 px;
+                height: 3000 px;
+                background-size: 1600px; 
+                animation: movimiento 10s infinite linear alternate;
+            } 
+
+
+@keyframes movimiento{
+  from{
+    background-position: bottom left;
+  }to{
+    background-position:top right ;
+  }
+}
+
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+
+   
+
+
+    </style>
+
+</head>
+<body  id="body"  style="background-color:blue;">
+ <center><h3 style="  width: 4000; height: 500; color:white" id="SERIES"> SERIES</h3></center><br><br>
+
+
+<ul class="menu">
+      <li><a href="TERROR2.html"> TERROR</a></li>
+      <li><a href="Comedia.html">COMEDIA</a></li>
+      <li><a href="">ENTRETENIMIENTO</a></li>
+      <li><a href="">INFANTILES</a></li>
+      <li><a href="CIENCIA FICCION.html">CIENCIA FICCION</a></li>
+      <li><a href="accion y aventura2.html">ACCION Y AVENTURA</a></li>
+      <li><a href="ANIME.html">ANIME</a></li>
+
+    </ul>
+
+
+
+    <div class="resolucion">
+        <div class="desktop">
+            <h4>Esto es un ordenador</h1>
+        </div>
+        <div class="tablet">
+            <h4>Esto es un tablet</h1>
+        </div>
+        <div class="movil">
+            <h4>Esto es un movil</h1>
+        </div>
+    </div>
+ 
+
+
+
+</body>
+</html>

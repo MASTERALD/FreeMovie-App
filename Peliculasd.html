@@ -1,0 +1,594 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" href="img/logo3.png" type="image/x-icon">
+    <title>FreeMovies</title>
+   
+ <style>
+    
+
+    } 
+
+
+
+
+     /**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+
+* {
+  margin: 0;
+}
+
+
+
+
+ </style>
+
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 style=" color: blue; " class="logo">FreeMovies</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"></li>
+                    <li class="menu-list-item"></li>
+                    <li class="menu-list-item"></li>
+                    <li class="menu-list-item"></li>
+                    <li class="menu-list-item"></li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+               
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+      <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/1f.jpeg');">
+               <h3>Tick, Tick... Boom!</h3>
+                <p class="featured-desc"></p>
+                <button class="featured-button">Reproducir</button>
+            </div>
+
+
+             <div class="movie-list-container">
+                <h1 class="movie-list-title">Nuevos Lanzamientos</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Spider-Man: No Way Home</span>
+                            <p class="movie-list-item-desc">Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura. Peter decide pedirle ayuda al Doctor Extraño para recuperar su vida. Pero algo sale mal y provoca una fractura en el multiverso.</p>
+                            <button class="movie-list-item-button"><a href="https://drive.google.com/file/d/163pAnt_Q9uufhSV8Hyn1zYSyyHJ4M7iN/view?usp=sharing"><i style=" color: white; ">Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
+                            <span class="movie-list-item-title">The Matrix Resurrections</span>
+                            <p class="movie-list-item-desc"> El programador informático Thomas Anderson, más conocido en el mundo de los "hacker" como Neo, está en el punto de mira del temible agente Smith. Otros dos piratas informáticos, Trinity y Morfeo, se ponen en contacto con Neo para ayudarlo a escapar. Matrix te posee. Sigue al conejo blanco. </p>
+                             <button class="movie-list-item-button"><a href="https://drive.google.com/file/d/1o21Bduv_t73qmwBJ4VLr5HMh1VYCxhki/view?usp=sharing"><i>Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">Venom: Carnage liberado</span>
+                            <p class="movie-list-item-desc">Después de encontrar un cuerpo anfitrión en el periodista de investigación Eddie Brock, el simbionte alienígena debe enfrentarse a un nuevo enemigo, Carnage, el alter ego del asesino en serie Cletus Kasady. </p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                            <span class="movie-list-item-title">Jungle Cruise</span>
+                            <p class="movie-list-item-desc">Película basada en el paseo en un parque temático de Disneyland donde un pequeño barco fluvial lleva a un grupo de viajeros a través de una jungla llena de peligrosos animales y reptiles, pero con un elemento sobrenatural.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                            <span class="movie-list-item-title">No respires 2</span>
+                            <p class="movie-list-item-desc">Un veterano ciego debe usar su entrenamiento militar para salvar a un joven huérfano de un grupo de matones que irrumpen en su casa. </p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                            <span class="movie-list-item-title">Shang-Chi y la leyenda de los Diez Anillos</span>
+                            <p class="movie-list-item-desc">El maestro de artes marciales Shang-Chi se enfrenta al pasado que creía haber dejado atrás cuando se ve envuelto en la red de la misteriosa organización de los Diez Anillos.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">Rápidos y Furiosos 9</span>
+                            <p class="movie-list-item-desc"></p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+             <div class="movie-list-container">
+                <h1 class="movie-list-title">Ciencia Ficcion</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/9.jpg" alt="">
+                            <span class="movie-list-item-title">Infinite</span>
+                            <p class="movie-list-item-desc">Las alucinaciones de un esquizofrénico se revelan como recuerdos de vidas pasadas donde obtuvo talentos que todavía tiene hasta el día de hoy.</p>
+                            <button class="movie-list-item-button"><a href=""><i style=" color: white; ">Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/10.jpg" alt="">
+                            <span class="movie-list-item-title">Duna</span>
+                            <p class="movie-list-item-desc">Arrakis, también denominado "Dune", se ha convertido en el planeta más importante del universo. A su alrededor comienza una gigantesca lucha por el poder que culmina en una guerra interestelar.  </p>
+                             <button class="movie-list-item-button"><a href=""><i>Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/11.jpg" alt="">
+                            <span class="movie-list-item-title">El Escuadrón Suicida</span>
+                            <p class="movie-list-item-desc">Con tal de salir de una prisión infernal, los supervillanos más peligrosos del mundo aceptan una misión del Gobierno: viajar a una remota isla, enemiga de los Estados Unidos y repleta de soldados, para destruir un laboratorio de alta tecnología. </p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/12.jpg" alt="">
+                            <span class="movie-list-item-title">Godzilla vs. Kong</span>
+                            <p class="movie-list-item-desc">Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. Monarch se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos bestias que parecen tener las horas contadas sobre la faz de la Tierra.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/13.jpg" alt="">
+                            <span class="movie-list-item-title">Black Widow</span>
+                            <p class="movie-list-item-desc">Una peligrosa conspiración, relacionada con su pasado, persigue a Natasha Romanoff, también conocida como Viuda Negra. La agente tendrá que lidiar con las consecuencias de haber sido espía, así como con las relaciones rotas, para sobrevivir. </p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/14.jpg" alt="">
+                            <span class="movie-list-item-title">La purga por siempre</span>
+                            <p class="movie-list-item-desc">Adela y su marido, Juan, viven en Texas, donde él trabaja como peón de rancho para la adinerada familia Tucker. En la mañana después de la Purga, una banda de asesinos enmascarados ataca a los Tucker, obligando a ambas familias a unirse y luchar.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/15.jpg" alt="">
+                            <span class="movie-list-item-title">The Tomorrow War</span>
+                            <p class="movie-list-item-desc">Un grupo de viajeros en el tiempo se transporta desde el año 2051 para entregar un mensaje urgente: la humanidad está perdiendo la guerra mundial contra unos alienígenas. La única esperanza es que los ciudadanos del presente se unan a la lucha.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+
+
+             <div class="movie-list-container">
+                <h1 class="movie-list-title">Accion y Aventuras</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/16.jpg" alt="">
+                            <span class="movie-list-item-title">El justiciero 2</span>
+                            <p class="movie-list-item-desc">El exagente secreto estadounidense Robert McCall continúa combatiendo por su cuenta a secuestradores, maltratadores y otros delincuentes que se cruzan en su solitaria vida de conductor de un servicio de VTC. Ahora, sin embargo, va a tener que intervenir en un asunto que le afecta personalmente.</p>
+                            <button class="movie-list-item-button"><a href=""><i style=" color: white; ">Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/17.jpg" alt="">
+                            <span class="movie-list-item-title">El protector</span>
+                            <p class="movie-list-item-desc"> Jim, un ranchero de Arizona que vive cerca de la frontera con México, se convierte en el protector de Miguel, un niño inmigrante de 11 años que ha perdido a su madre en un tiroteo con los asesinos del cartel que lo persiguen. </p>
+                             <button class="movie-list-item-button"><a href=""><i>Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/18.jpg" alt="">
+                            <span class="movie-list-item-title">La vieja guardia</span>
+                            <p class="movie-list-item-desc"> Un grupo de mercenarios, todos inmortales y con la capacidad de curarse a sí mismos, descubren que alguien sabe su secreto y deben luchar para proteger su libertad.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
+                            <span class="movie-list-item-title">El redentor</span>
+                            <p class="movie-list-item-desc">Un hombre que cree estar más allá de la redención busca su propia versión de la justicia y es recompensado, aunque sólo fugazmente, con amor.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/20.jpg" alt="">
+                            <span class="movie-list-item-title">SAS: El ascenso del Cisne Negro</span>
+                            <p class="movie-list-item-desc">Un pequeño ejército de criminales bien entrenados y liderados por Laszlo Antonov ha secuestrado el Eurostar en las profundidades del Canal de la Mancha. </p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/21.jpg" alt="">
+                            <span class="movie-list-item-title">john wick 3 parabellum</span>
+                            <p class="movie-list-item-desc">John Wick regresa de nuevo pero con una recompensa sobre su cabeza que persigue unos mercenarios. Tras asesinar a uno de los miembros de su gremio, Wick es expulsado y se convierte en el foco de atención de todos los sicarios de la organización.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/32.jpg" alt="">
+                            <span class="movie-list-item-title">Rambo: la última misión</span>
+                            <p class="movie-list-item-desc">John Rambo está en horas bajas y viviendo en un rancho en Arizona, pero cuando recibe la noticia de que su nieta ha desaparecido, tras haber cruzado la frontera a México para ir a una fiesta, Rambo decide ir en su búsqueda.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a ></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/37.jpg" alt="">
+                            <span class="movie-list-item-title">Tenet</span>
+                            <p class="movie-list-item-desc">Una acción épica que gira en torno al espionaje internacional, los viajes en el tiempo y la evolución, en la que un agente secreto debe prevenir la Tercera Guerra Mundial.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                     <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/36.jpg" alt="">
+                            <span class="movie-list-item-title">Sin tiempo para morir</span>
+                            <p class="movie-list-item-desc">EL legendario espía James Bond ha dejado el servicio activo. Su paz dura poco ya que su viejo amigo Felix Leiter de la CIA aparece pidiendo ayuda, lo que lleva a Bond al rastro de un misterioso villano armado con nueva tecnología peligrosa.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a ></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/35.jpg" alt="">
+                            <span class="movie-list-item-title">Mulán</span>
+                            <p class="movie-list-item-desc">El emperador chino emite un decreto que exige que cada hogar debe reclutar a un varón para luchar con el ejército imperial en la guerra contra los Hunos. Para salvar a su anciano padre de este deber, su única hija Fa Mulan se hace pasar por soldado y toma su lugar. La joven se someterá a un duro entrenamiento hasta hacerse merecedora de la estima y de la confianza del resto de su escuadrón.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Entrenenimiento</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/38.jpg" alt="">
+                            <span class="movie-list-item-title">Bill & Ted salvando el universo</span>
+                            <p class="movie-list-item-desc">Tiempo atrás, los rockeros Bill y Ted recibieron una visita del futuro que les dijo que compondrían la canción que salvaría el universo. Años después, los dos amigos siguen intentando componer algo que valga la pena.</p>
+                            <button class="movie-list-item-button"><a href=""><i style=" color: white; ">Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/39.jpg" alt="">
+                            <span class="movie-list-item-title">No miren arriba</span>
+                            <p class="movie-list-item-desc">Dos astrónomos mediocres descubren que, en pocos meses, un meteorito destruirá el planeta Tierra. A partir de ese momento, intentan advertir a la humanidad del peligro que se avecina a través de los medios de comunicación.  </p>
+                             <button class="movie-list-item-button"><a href=""><i>Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/40.png" alt="">
+                            <span class="movie-list-item-title">Misión de rescate</span>
+                            <p class="movie-list-item-desc"> Tyler Rake, un intrépido mercenario, es enviado a Bangladesh por un poderoso mafioso encarcelado para que salve a su hijo secuestrado.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/41.jpg" alt="">
+                            <span class="movie-list-item-title">El poder del perro</span>
+                            <p class="movie-list-item-desc">Los acaudalados hermanos Phil y George Burbank son las dos caras de la misma moneda. Phil es elegante y cruel, mientras que George es impasible y amable. Cuando George se casa en secreto con una viuda del pueblo, Phil lleva a cabo una guerra sádica e implacable usando a su afeminado hijo, Peter, como peón.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/42.jpg" alt="">
+                            <span class="movie-list-item-title">Todo el día y una noche</span>
+                            <p class="movie-list-item-desc"> Un joven reflexiona por primera vez sobre sí mismo, sus circunstancias, la sociedad y el sistema que lo ha llevado a la prisión, cuando ingresa en la misma cárcel en la que su padre cumple condena.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/43.jpg" alt="">
+                            <span class="movie-list-item-title">El hoyoEn el futuro, los prisioneros se alojan en celdas verticales, observando cómo los presos de las celdas superiores son alimentados mientras los de abajo mueren de hambre. Una jungla de supervivencia donde solo hay tres tipos de personas: los que están arriba, los que están abajo y los que deciden saltar, incapaces de soportar esa agonía por más tiempo.</span>
+                            <p class="movie-list-item-desc">En el futuro, los prisioneros se alojan en celdas verticales, observando cómo los presos de las celdas superiores son alimentados mientras los de abajo mueren de hambre. Una jungla de supervivencia donde solo hay tres tipos de personas: los que están arriba, los que están abajo y los que deciden saltar, incapaces de soportar esa agonía por más tiempo.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">Rápidos y Furiosos 9</span>
+                            <p class="movie-list-item-desc"></p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Infantiles</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Spider-Man: No Way Home</span>
+                            <p class="movie-list-item-desc">Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura. Peter decide pedirle ayuda al Doctor Extraño para recuperar su vida. Pero algo sale mal y provoca una fractura en el multiverso.</p>
+                            <button class="movie-list-item-button"><a href="https://drive.google.com/file/d/163pAnt_Q9uufhSV8Hyn1zYSyyHJ4M7iN/view?usp=sharing"><i style=" color: white; ">Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
+                            <span class="movie-list-item-title">The Matrix Resurrections</span>
+                            <p class="movie-list-item-desc"> El programador informático Thomas Anderson, más conocido en el mundo de los "hacker" como Neo, está en el punto de mira del temible agente Smith. Otros dos piratas informáticos, Trinity y Morfeo, se ponen en contacto con Neo para ayudarlo a escapar. Matrix te posee. Sigue al conejo blanco. </p>
+                             <button class="movie-list-item-button"><a href="https://drive.google.com/file/d/1o21Bduv_t73qmwBJ4VLr5HMh1VYCxhki/view?usp=sharing"><i>Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">Venom: Carnage liberado</span>
+                            <p class="movie-list-item-desc">Después de encontrar un cuerpo anfitrión en el periodista de investigación Eddie Brock, el simbionte alienígena debe enfrentarse a un nuevo enemigo, Carnage, el alter ego del asesino en serie Cletus Kasady. </p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                            <span class="movie-list-item-title">Jungle Cruise</span>
+                            <p class="movie-list-item-desc">Película basada en el paseo en un parque temático de Disneyland donde un pequeño barco fluvial lleva a un grupo de viajeros a través de una jungla llena de peligrosos animales y reptiles, pero con un elemento sobrenatural.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                            <span class="movie-list-item-title">No respires 2</span>
+                            <p class="movie-list-item-desc">Un veterano ciego debe usar su entrenamiento militar para salvar a un joven huérfano de un grupo de matones que irrumpen en su casa. </p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                            <span class="movie-list-item-title">Shang-Chi y la leyenda de los Diez Anillos</span>
+                            <p class="movie-list-item-desc">El maestro de artes marciales Shang-Chi se enfrenta al pasado que creía haber dejado atrás cuando se ve envuelto en la red de la misteriosa organización de los Diez Anillos.</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">Rápidos y Furiosos 9</span>
+                            <p class="movie-list-item-desc"></p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Populares</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/8.jpg" alt="">
+                            <span class="movie-list-item-title">Red Notice</span>
+                            <p class="movie-list-item-desc">John Hartley, agente de la Interpol, no tendrá otro remedio que aliarse con el ladrón de arte más célebre de todos los tiempos, Nolan Booth, para capturar a la ladrona de arte más buscada del presente: la seductora y peligrosa Sarah Black.</p>
+                             <button class="movie-list-item-button"><a href="https://drive.google.com/file/d/1ZCvYFyC-mDe-QUZXCOVANDlgu5lfCLZI/view?usp=sharing"><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/9.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/10.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/11.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/12.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="  background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/1638668108_Las-proyecciones-de-prensa-de-Spider-Man-No-Way-Home-solo.jpg">
+                <img class="featured-title" src="img/No_way_home_logo.png" alt="">
+                <p class="featured-desc">Spider-Man No Way Home</p>
+                <button class="featured-button">Reproducir</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Terror</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/15.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Peliculas Cristianas</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/24.jpg" alt="">
+                            <span class="movie-list-item-title">El campamento de mi vida</span>
+                            <p class="movie-list-item-desc">Sinopsis:¿Campamento de verano? No es su rollo. Pero si le añade su chica ideal, nuevos amigos y un poco de fe, puede que este sea su sitio.</p>
+                             <button class="movie-list-item-button"><a href="https://drive.google.com/file/d/1Fbr07pgzSwKY3XWCxRCYPRA44SYvAUMO/view?usp=sharing"><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/25.jpg" alt="">
+                            <span class="movie-list-item-title">Mientras estés conmigo</span>
+                            <p class="movie-list-item-desc">Sinopsis:La biografía del intérprete de música cristiana Jeremy Camp. Una vida marcada por la lucha contra la adversidad, una batalla en la que siempre se aferró al amor y la fe.</p>
+                            <button class="movie-list-item-button"><a href="https://drive.google.com/file/d/1WvA6i0XIfPfiulWtgSJnlV7Cm6YHU2wW/view?usp=sharing"><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/26.jpg" alt="">
+                            <span class="movie-list-item-title">El cielo es real</span>
+                            <p class="movie-list-item-desc">Sinopsis:Todd Burpo intenta llegar a fin de mes en lo que ha sido un año duro. Tras tener que someter a su hijo de cuatro años a una cirugía de emergencia en el hospital, descubre cómo el pequeño empieza a hablar sobre su viaje de ida y vuelta al Cielo.</p>
+                           <button class="movie-list-item-button"><a href="https://drive.google.com/file/d/1To0xn8HBVDY4Qvox1rPLfpkDOBembU0K/view?usp=sharing"><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/27.jpg" alt="">
+                            <span class="movie-list-item-title">La cabaña</span>
+                            <p class="movie-list-item-desc">Sinopsis:Después de sufrir una tragedia familiar, Mack Phillips cae en una profunda depresión que le lleva a cuestionar todas sus creencias. Sumido en una crisis de fe, recibe una enigmática carta donde un misterioso personaje le cita en una cabaña abandonada en lo más profundo de los bosques de Oregón. A pesar de sus dudas, Mack viaja a la cabaña, donde se encontrará con alguien inesperado.</p>
+                            <button class="movie-list-item-button"><a href="https://drive.google.com/file/d/1a4adT4hguCQvFmAzJoBnBnWTpEjvkGGq/view?usp=sharing"><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/29.jpg" alt="">
+                            <span class="movie-list-item-title">La pasión de Cristo</span>
+                            <p class="movie-list-item-desc">Sinopsis: La Pasión de Cristo recrea las últimas doce horas en la vida de Jesús de Nazaret desde el momento en el que acude al Huerto de los Olivos (Getsemaní) a orar tras la Última Cena, enfrentándose a las tentaciones de Satanás.</p>
+                             <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/30.jpg" alt="">
+                            <span class="movie-list-item-title">Dios no está muerto</span>
+                            <p class="movie-list-item-desc">Sinopsis:Después de que él se niega a renegar de su fe, un devoto estudiante cristiano debe probar la existencia de Dios o su profesor de filosofía lo reprobará</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/31.jpg" alt="">
+                            <span class="movie-list-item-title">Dios no está muerto 2</span>
+                            <p class="movie-list-item-desc">Sinopsis: Una maestra de Historia se enfrenta a una denuncia por contestarle a una alumna una pregunta sobre Jesucristo en la escuela. Un abogado la defiende</p>
+                            <button class="movie-list-item-button"><a href=""><i style="color: white;" >Reproducir</i> </a></button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="resolucion">
+        <div class="desktop">
+            <h4>Esto es un ordenador</h1>
+        </div>
+        <div class="tablet">
+            <h4>Esto es un tablet</h1>
+        </div>
+        <div class="movil">
+            <h4>Esto es un movil</h1>
+        </div>
+    </div>  
+
+
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>

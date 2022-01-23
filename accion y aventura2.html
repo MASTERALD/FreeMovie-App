@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Accion Y Aventuras</title>
+    <link rel="shortcut icon" href="img/logo3.png" type="image/x-icon">
+	<style>
+
+
+
+  	figure {
+
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  
+  
+
+
+
+}
+
+figcaption {
+
+	position: relative;
+	
+}
+
+
+  	#acci{
+
+
+      font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+
+       
+       
+       background-color: black;
+
+
+       width: 1400;
+       height: 140;
+
+    }
+
+
+  	    .contenedor figure{
+       position:relative;
+        height: 450px;
+        cursor: pointer;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.50);
+    }
+    .contenedor figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .contenedor figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,103,123,0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .contenedor figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .contenedor figure:hover > .capa h3{
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    .contenedor figure:hover > img{
+        transform: scale(1.3);
+    }
+    .contenedor figure .capa h3{
+        color: #fff;
+        font-weight: 100;
+        margin-bottom: 100px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .contenedor figure .capa p{
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    }
+
+
+
+  </style>
+
+
+
+
+</head>
+<body style=" background-color: blue; ">
+	<center><h3 style="  width: 4000; height: 500; color:white" id="acci"> Accion Y Aventuras</h3></center><br><br>
+
+	<figure>
+   <div class="contenedor">
+       <a href="#">
+    <figure>
+   	    <img src="https://pics.filmaffinity.com/Loki_Serie_de_TV-814995520-large.jpg" alt="Loki (Serie de TV) (2021) - Filmaffinity" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 300px; height: 450px; margin: 0px;">
+                <div class="capa">
+                  <h3>Loki</h3>
+                    <p> Sinopsis: Durante los eventos acontecidos en Los Vengadores: Endgame, Loki (Tom Hiddleston) logra hacerse con el Teseracto. Por ello, es juzgado por una misteriosa organización conocida como Autoridad de Variación Temporal, y se verá obligado a viajar en el tiempo para ayudarles a atrapar a un enemigo mayor.</p>
+
+              
+             </div>
+     </figure>
+           </a>
+      </div>
+       
+        <figcaption><button><a href="LOKI.html"><i>Reproducir Loki</i></a></button></figcaption>           
+ </figure>
+
+
+</body>
+</html>
