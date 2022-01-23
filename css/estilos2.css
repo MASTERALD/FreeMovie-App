@@ -1,0 +1,41 @@
+*h1 {
+
+}
+
+
+header .PE1 {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+
+header .PE2 {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+
+.body{
+
+font-family: 'Architects Daughter', cursiva;
+background-color:blue ;
+
+}
+
+header.descripcion{
+
+	font-family: 'Architects Daughter', cursiva;
+background-color:blue ;
+
+
+
+
+}
+
+
+
+
